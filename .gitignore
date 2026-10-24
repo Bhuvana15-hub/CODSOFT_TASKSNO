@@ -1,0 +1,22 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Captured data (contains real IPs and browsing metadata)
+*.pcap
+*.pcapng
+*.csv
+!sample_output/*.csv
+
+# Secrets and local config
+.env
+*.key
+*.pem
+
+# OS / editor
+.DS_Store
+.vscode/
