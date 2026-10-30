@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'">
+  <title>Phishing Awareness Training</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Phishing Awareness Training</h1>
+    <p>Learn how to spot and avoid phishing attacks.</p>
+    <nav>
+      <a href="#what-is">What is phishing?</a> 
+      <a href="#emails">Suspicious emails</a> 
+      <a href="#websites">Fake websites</a> 
+      <a href="#social">Social engineering</a> 
+      <a href="#tips">Security tips</a> 
+      <a href="#cases">Case studies</a> 
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== 1. WHAT IS PHISHING ===================== -->
+    <section id="what-is">
+      <h2>1. What is phishing?</h2>
+      <p>Phishing is a trick where an attacker pretends to be someone you trust,
+         such as a bank, a company or a colleague, to make you click a link,
+         open a file or share private information like a password.</p>
+      <h3>Why it works</h3>
+      <p>Phishing targets people, not computers. Attackers create pressure
+         and curiosity so that you act before you think.</p>
+      <h3>Common types</h3>
+      <ul>
+        <li><strong>Email phishing:</strong> fake emails sent to many people.</li>
+        <li><strong>Spear phishing:</strong> a targeted email written for one person or company.</li>
+        <li><strong>Smishing:</strong> phishing by SMS text message.</li>
+        <li><strong>Vishing:</strong> phishing by phone call.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== 2. SUSPICIOUS EMAILS ===================== -->
+    <section id="emails">
+      <h2>2. Spotting suspicious emails</h2>
+      <p>Most phishing emails have at least one warning sign. Check these
+         before you click anything.</p>
+
+      <h3>Warning signs</h3>
+      <ul>
+        <li><strong>Strange sender address:</strong> the display name looks right, but the email address behind it belongs to a different domain.</li>
+        <li><strong>Urgent or scary language:</strong> "Your account will be closed in 24 hours!"</li>
+        <li><strong>Generic greeting:</strong> "Dear customer" instead of your name.</li>
+        <li><strong>Suspicious links:</strong> the text says one thing, but the real address (shown when you hover) is different.</li>
+        <li><strong>Unexpected attachments:</strong> invoices, "documents" or "voice messages" you were not waiting for.</li>
+        <li><strong>Requests for private data:</strong> real companies do not ask for your password, PIN or OTP by email.</li>
+        <li><strong>Spelling and formatting mistakes:</strong> not always present, but common.</li>
+      </ul>
+
+      <h3>Example: a fake email (fictional company)</h3>
+      <p>This example uses a made-up bank called ExampleBank. Read it, then
+         look at the numbered red flags below it.</p>
+
+      <div class="fake-email">
+        <p><strong>From:</strong> ExampleBank Support &lt;support@examplebank-alerts.net&gt; <em>(1)</em></p>
+        <p><strong>Subject:</strong> URGENT: Your account will be suspended <em>(2)</em></p>
+        <hr>
+        <p>Dear customer, <em>(3)</em></p>
+        <p>We noticed unusual activity on your account. You must verify your
+           details within 24 hours or your account will be closed. <em>(2)</em></p>
+        <p>Click here to verify now: <code>http://examplebank-verify-login.net/secure</code> <em>(4)</em></p>
+        <p>Please also confirm your password and the OTP we will send you. <em>(5)</em></p>
+        <p>Attachment: <code>Account_Statement.zip</code> <em>(6)</em></p>
+      </div>
+
+      <h3>Red flags in the example</h3>
+      <ol>
+        <li>The sender domain is <code>examplebank-alerts.net</code>, not the bank's real domain.</li>
+        <li>Urgency and a threat push you to act without thinking.</li>
+        <li>A generic greeting. A real bank knows your name.</li>
+        <li>The link goes to a look-alike domain, not the bank's real website.</li>
+        <li>Asking for a password and OTP. A bank never asks for these.</li>
+        <li>A <code>.zip</code> attachment you did not expect can contain malware.</li>
+      </ol>
+
+      <h3>What to do</h3>
+      <p>Do not click or open anything. Open your bank's official app or type
+         its website address yourself, and check your account there. Then report
+         and delete the email.</p>
+    </section>
+
+    <!-- ===================== 3. FAKE WEBSITES ===================== -->
+    <section id="websites">
+      <h2>3. Fake login pages and fraudulent websites</h2>
+      <p>Attackers copy the look of a real login page so that you type your
+         password into their website instead. The page can look perfect, so the
+         address bar is the thing to check.</p>
+
+      <h3>How to check a website</h3>
+      <ul>
+        <li><strong>Read the domain carefully.</strong> The real site name is the part just before the last dot-and-ending, for example <code>examplebank.com</code>.</li>
+        <li><strong>Read it from right to left.</strong> In <code>examplebank.com.secure-verify.net</code>, the real domain is <code>secure-verify.net</code>, not <code>examplebank.com</code>.</li>
+        <li><strong>Watch for look-alike spelling</strong> (called typosquatting), such as <code>examp1ebank.com</code> with the number 1 instead of the letter l.</li>
+        <li><strong>Do not trust the padlock alone.</strong> The padlock (HTTPS) only means the connection is encrypted. Attackers can get it for fake sites too.</li>
+        <li><strong>Do not log in from a link.</strong> Type the address yourself or use a saved bookmark or the official app.</li>
+        <li><strong>Be careful with shortened links</strong> that hide the real destination.</li>
+      </ul>
+
+      <h3>Examples of suspicious addresses (fictional)</h3>
+      <table>
+        <thead>
+          <tr><th>Address</th><th>What is wrong</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>examp1ebank.com</code></td><td>Number 1 replaces the letter l</td></tr>
+          <tr><td><code>examplebank-login.net</code></td><td>Extra word and a different ending</td></tr>
+          <tr><td><code>examplebank.com.secure-verify.net</code></td><td>The real domain is <code>secure-verify.net</code></td></tr>
+          <tr><td><code>http://examplebank.com</code></td><td>No HTTPS. Never enter a password here.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Signs of a fraudulent shopping or service website</h3>
+      <ul>
+        <li>Prices that are far too good to be true</li>
+        <li>No contact details, or only a free email address</li>
+        <li>Only unusual payment methods are accepted (such as gift cards or direct transfers)</li>
+        <li>The site was created very recently and has no reviews you can verify</li>
+      </ul>
+    </section>
+
+    <!-- ===================== 4. SOCIAL ENGINEERING ===================== -->
+    <section id="social">
+      <h2>4. Social engineering techniques</h2>
+      <p>Social engineering means manipulating people, not machines. Attackers
+         use normal human feelings to make you skip your usual caution.</p>
+
+      <table>
+        <thead>
+          <tr><th>Technique</th><th>How it works</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Urgency</td>
+            <td>Pressure to act right now</td>
+            <td>"Pay in 1 hour or your service will be cut."</td>
+          </tr>
+          <tr>
+            <td>Fear</td>
+            <td>A threat of loss or punishment</td>
+            <td>"Your account has been hacked. Click to secure it."</td>
+          </tr>
+          <tr>
+            <td>Authority</td>
+            <td>Pretending to be a boss, the police or the IT team</td>
+            <td>"This is the CEO. Buy gift cards for a client today."</td>
+          </tr>
+          <tr>
+            <td>Greed</td>
+            <td>Promising a prize or easy money</td>
+            <td>"You won a lottery. Pay a small fee to claim it."</td>
+          </tr>
+          <tr>
+            <td>Curiosity</td>
+            <td>A tempting attachment or link</td>
+            <td>"Photos of you from last night."</td>
+          </tr>
+          <tr>
+            <td>Helpfulness and trust</td>
+            <td>Asking for a small favour or "help"</td>
+            <td>"I am locked out, can you share your code?"</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Other tricks</h3>
+      <ul>
+        <li><strong>Pretexting:</strong> inventing a believable story, such as "I am from IT support and need to fix your VPN."</li>
+        <li><strong>Impersonation:</strong> using a colleague's or company's name and style.</li>
+        <li><strong>Baiting:</strong> leaving something tempting, like an unknown USB drive.</li>
+      </ul>
+
+      <p><strong>The rule:</strong> when a message makes you feel rushed,
+         scared or very excited, stop. That feeling is the warning sign.</p>
+    </section>
+
+    <!-- ===================== 5. SECURITY TIPS ===================== -->
+    <section id="tips">
+      <h2>5. Practical security tips</h2>
+
+      <h3>Everyday habits</h3>
+      <ul>
+        <li><strong>Pause before you click.</strong> Check the sender, the link and what is being asked.</li>
+        <li><strong>Go to the source yourself.</strong> Type the website address or use the official app instead of following a link.</li>
+        <li><strong>Verify through another channel.</strong> If your "boss" or "bank" asks for something unusual, call them on a number you already know.</li>
+        <li><strong>Never share passwords, PINs or OTPs</strong> with anyone, even if they say they are from support.</li>
+        <li><strong>Hover over links</strong> to see the real address before clicking.</li>
+        <li><strong>Be careful with attachments</strong> you did not expect.</li>
+      </ul>
+
+      <h3>Protect your accounts</h3>
+      <ul>
+        <li><strong>Turn on multi-factor authentication (MFA)</strong> so a stolen password alone is not enough.</li>
+        <li><strong>Use a password manager.</strong> It creates strong, unique passwords, and it normally fills them in only on the correct website, which can help you notice a fake one.</li>
+        <li><strong>Use a different password for each account.</strong></li>
+        <li><strong>Keep your phone, browser and apps updated.</strong></li>
+      </ul>
+
+      <h3>If you clicked or entered details</h3>
+      <ol>
+        <li>Disconnect from the internet if you opened a suspicious file.</li>
+        <li>Change the password for that account right away, and for any other account that uses the same password.</li>
+        <li>Turn on MFA and check the account for activity you do not recognize.</li>
+        <li>If money or banking details are involved, call your bank immediately.</li>
+        <li>Report it. At work, tell your IT or security team. In India, you can report cyber fraud on the National Cyber Crime Reporting Portal (cybercrime.gov.in) or call the helpline 1930.</li>
+        <li>Do not feel embarrassed. Fast reporting limits the damage.</li>
+      </ol>
+    </section>
+
+    <!-- ===================== 6. CASE STUDIES ===================== -->
+    <section id="cases">
+      <h2>6. Case studies</h2>
+      <p>These are real incidents. They show that phishing affects even
+         technology companies with strong security teams.</p>
+
+      <article>
+        <h3>Case 1: Twitter, July 2020 (phone phishing)</h3>
+        <p><strong>What happened:</strong> On 14 and 15 July 2020, attackers
+           phoned Twitter employees while pretending to be the company's IT
+           help desk. They said there was a problem with the VPN and sent the
+           employees to a fake login page that looked like the real one. The
+           employees entered their credentials, and the attackers used them to
+           reach internal tools.</p>
+        <p><strong>Result:</strong> Many high-profile accounts were taken over
+           and used to post a bitcoin scam. New York's financial regulator
+           reported that the scammers took about $118,000 in bitcoin.</p>
+        <p><strong>Lessons:</strong></p>
+        <ul>
+          <li>Phishing can happen by phone, not just email (vishing).</li>
+          <li>A caller claiming to be "IT" must still be verified through an official channel.</li>
+          <li>Login pages on look-alike domains can steal credentials from trained staff too.</li>
+        </ul>
+        <p><small>Sources:
+          <a href="https://techxplore.com/news/2020-07-twitter-hackers-staff-gain-access.html" target="_blank" rel="noopener noreferrer">AP via TechXplore</a>,
+          <a href="https://www.helpnetsecurity.com/2020/07/31/twitter-employees-spear-phished/" target="_blank" rel="noopener noreferrer">Help Net Security</a>
+        </small></p>
+      </article>
+
+      <article>
+        <h3>Case 2: Google and Facebook invoice scam, 2013 to 2015</h3>
+        <p><strong>What happened:</strong> A man in Lithuania, Evaldas
+           Rimasauskas, pretended to be Quanta Computer, a real hardware
+           supplier that Google and Facebook regularly paid. He sent fake
+           emails with forged invoices, contracts and letters asking for
+           payment to bank accounts he controlled.</p>
+        <p><strong>Result:</strong> Employees at both companies paid the fake
+           invoices, and the scheme brought in more than $100 million in
+           total. He was arrested in 2017, extradited to the United States
+           and pleaded guilty in 2019. Google said it recovered its money, and
+           Facebook said it recovered most of its money.</p>
+        <p><strong>Lessons:</strong></p>
+        <ul>
+          <li>Phishing is also about money. This type is often called business email compromise.</li>
+          <li>Always confirm changes to payment details by calling a known number.</li>
+          <li>Invoices should go through a proper approval process, not just one person's inbox.</li>
+        </ul>
+        <p><small>Sources:
+          <a href="https://www.npr.org/2019/03/25/706715377" target="_blank" rel="noopener noreferrer">NPR</a>,
+          <a href="https://www.cnbc.com/2017/04/27/facebook-and-google-were-victims-of-a-100-million-dollar-phishing-scam-fortune.html" target="_blank" rel="noopener noreferrer">CNBC</a>
+        </small></p>
+      </article>
+    </section>
+
+    <!-- ===================== 7. QUIZ ===================== -->
+    <section id="quiz">
+  <h2>7. Quiz</h2>
+  <p>Test what you learned. Your answers are not stored or sent anywhere.</p>
+  <div id="quiz-container"></div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>Educational project. This page never asks for passwords or personal data.
+       All company names in examples are fictional.</p>
+  </footer>
+</body>
+</html>
