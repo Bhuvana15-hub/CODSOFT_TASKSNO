@@ -3,6 +3,7 @@
 A small website that teaches people how to recognize and avoid phishing attacks. It has short lessons, real case studies and a quiz with instant feedback.
 
 This is **Task 2** of my CodSoft Cyber Security Internship.
+**Live demo:** [https://bhuvana15-hub.github.io/CODSOFT_TASKSNO/Task2_Phishing_Awareness/](https://bhuvana15-hub.github.io/CODSOFT_TASKSNO/Task2_Phishing_Awareness/)
 
 ## Objective
 
