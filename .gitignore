@@ -20,3 +20,6 @@ __pycache__/
 # OS / editor
 .DS_Store
 .vscode/
+
+# Task 3: third-party app under review (referenced by link, not committed)
+Task3_Secure_Code_Assessment/target_app/
